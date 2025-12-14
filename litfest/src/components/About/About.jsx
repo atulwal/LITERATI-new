@@ -1,16 +1,55 @@
 import React from "react";
 import "./About.css";
-import waterfall from "../../assets/waterfall.png";
 
 const About = () => {
-  const backgroundStyle = {
-    backgroundImage: `linear-gradient(180deg, rgba(5, 10, 8, 0.55), rgba(5, 15, 10, 0.85)), url(${waterfall})`
-  };
-
   return (
-    <section id="about" className="about" style={backgroundStyle}>
-      <h2>About LitFest</h2>
-      <p>A celebration of literature, creativity, imagination, and expression.</p>
+    <section id="about" className="about">
+      <div className="about-content">
+
+        <h2>About LitFest</h2>
+        <p className="tagline">
+          A celebration of literature, imagination, and creative energy
+        </p>
+
+        <p className="description">
+          LitFest 2026 brings writers, readers, artists, and creators together to explore ideas,
+          build community, and craft stories in all forms. From poetry and fiction to performances,
+          design, and culture, it's a space to express, experiment, and connect.
+        </p>
+
+        <div className="features">
+          <div className="feature-card">
+            <div className="icon">💡</div>
+            <h3>Inspire</h3>
+            <p>Workshops, talks, and readings that ignite fresh ideas.</p>
+          </div>
+
+          <div className="feature-card">
+            <div className="icon">✏️</div>
+            <h3>Create</h3>
+            <p>Hands-on sessions, writing jams, and collaborative spaces.</p>
+          </div>
+
+          <div className="feature-card">
+            <div className="icon">🧬</div>
+            <h3>Connect</h3>
+            <p>Meet people who share curiosity and passion for stories.</p>
+          </div>
+        </div>
+
+        <div className="stats">
+          <div className="stat"><span>3 days</span></div>
+          <div className="stat"><span>15+ workshops</span></div>
+          <div className="stat"><span>2000+ attendees</span></div>
+        </div>
+
+        <p className="footer-text">
+          LitFest began as a small campus initiative to promote creation and discussion.
+          Over time, it evolved into one of the most anticipated cultural fests, known for its
+          immersive themes, vibrant community, and inclusive spirit.
+        </p>
+
+      </div>
     </section>
   );
 };
